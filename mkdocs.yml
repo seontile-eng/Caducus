@@ -4,7 +4,7 @@ site_url: https://<your-github-username>.github.io/<your-repo-name>/
 repo_url: https://github.com/<your-github-username>/<your-repo-name>
 repo_name: <your-github-username>/<your-repo-name>
 
-docs_dir: docs
+docs_dir: .
 site_dir: _site
 
 theme:
@@ -20,7 +20,9 @@ markdown_extensions:
       permalink: true
 
 nav:
-  - Home: index.md
-  - Canon Guide: canon-guide.md
-  - Glossary Example: glossary-example.md
-  - Templates: templates.md
+  - Home: docs/index.md
+  - Canon:
+      - Overview: canon/README.md
+      - Glossary Example: canon/glossary/example-term.md
+  - Templates:
+      - Canon Entry Template: templates/canon-entry-template.md
