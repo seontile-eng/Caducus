@@ -1,0 +1,28 @@
+site_name: Caducus Worldbuilding
+site_description: Canon worldbuilding knowledge base
+site_url: https://<your-github-username>.github.io/<your-repo-name>/
+repo_url: https://github.com/<your-github-username>/<your-repo-name>
+repo_name: <your-github-username>/<your-repo-name>
+
+docs_dir: .
+site_dir: _site
+
+theme:
+  name: material
+
+plugins:
+  - search
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - toc:
+      permalink: true
+
+nav:
+  - Home: docs/index.md
+  - Canon:
+      - Overview: canon/README.md
+      - Glossary Example: canon/glossary/example-term.md
+  - Templates:
+      - Canon Entry Template: templates/canon-entry-template.md
